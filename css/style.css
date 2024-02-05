@@ -1,0 +1,462 @@
+/* philosopher-regular - cyrillic-ext_latin */
+@font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Philosopher';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../fonts/philosopher-v19-cyrillic-ext_latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+html {
+	background-color: black;
+	padding: 0px;
+	margin: 0px;
+	font-family: "Philosopher";
+	text-align: center;
+	background-image: url(../img/background.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.container {
+	background-color: rgba(0, 0, 0, 0.623);
+	border-radius: 50px;
+	padding-top: 25px;
+	margin: 20px 0px;
+}
+
+.panel {
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+	padding-bottom: 35px;
+}
+
+.procentovyhry2 {
+	padding-bottom: 10px;
+}
+
+.procentovyhry3 {
+	padding-bottom: 10px;
+}
+
+.procentovyhry4 {
+	padding-bottom: 10px;
+}
+
+.realnahodnota {
+	position: relative;
+	top: -30px;
+	height: 20px;
+}
+
+.realnahodnota2 {
+	position: relative;
+	display: inline-block;
+	background-color: black;
+	border-radius: 10px;
+	padding: 5px;
+	font-size: large;
+}
+
+.procentovyhry {
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+	font-size: 20px;
+}
+
+.vyhry {
+	display: flex;
+	padding: 20px;
+	font-size: large;
+	justify-content: center;
+}
+
+.input {
+	padding: 10px;
+}
+
+.vsazenaCastka {
+	padding: 10px;
+	height: 30px;
+}
+
+.dvakrat , .trikrat , .jackpot, .padesat, .dvacet, .pet {
+	padding: 10px;
+	text-align: center;
+}
+
+body {
+	color: white;
+	text-shadow: 0px 0px 3px black;
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+.okynka {
+	display: flex;
+	background-color: rgba(0, 0, 0, 0.637);
+	align-items: center;
+	border-radius: 40px;
+	justify-content: center;
+	margin: 20px;
+}
+.okynko1 , .oknyko3 , .okynko2 {
+	width: 50px;
+	height: 50px;
+	border: 2px solid white;
+	border-radius: 10px;
+	padding: 20px;
+	margin: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 50px;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.zustatek {
+	font-size: 40px;
+	font-weight: bold;
+	padding-bottom: 10px;
+}
+.vyhra {
+	padding: 15px;
+	font-size: 30px;
+	font-weight: bold;
+	height: 60px;
+}
+.cisla {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+
+.okynko1 , .okynko2 , .oknyko3 {
+	overflow: hidden;
+}
+
+.cislo1 , .cislo2 , .cislo3 {
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+animation-play-state: paused;
+}
+
+@keyframes slide {
+	0% {transform: translateY(-75px);}
+	50% {transform: translateY(0px);}
+	100% {transform: translateY(75px);}
+}
+
+@keyframes slide2 {
+	0% {transform: translateY(-75px);}
+	50% {transform: translateY(40px);}
+	100% {transform: translateY(0px);}
+}
+.tlacitka button {
+	display: flex;
+	justify-content: space-around;
+}
+
+.tlacitka form {
+	display: flex;
+	justify-content: space-around;
+	padding: 20px 10px;
+}
+
+.reg {
+	display: flex;
+	flex-direction: column;
+}
+
+.log {
+	display: flex;
+	flex-direction: column;
+}
+
+.login form{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.registrovat form{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.prihlasenyuzivatel {
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row-reverse;
+	padding: 15px;
+}
+
+.tabulka {
+	display: flex;
+	justify-content: center;
+	padding: 20px 15px;
+}
+
+.tabulka th {
+	padding: 5px;
+}
+
+.tabulka td {
+	padding: 5px;
+}
+
+button {
+	background-color: #ffffff; /* Green */
+	border: 1px solid white;
+	color: rgb(27, 27, 27);
+	padding: 10px 0px;
+	text-align: center;
+	font-size: 16px;
+	margin: 4px 2px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+	width: 120px;
+	border-radius: 8px;
+	font-family: "Philosopher";
+  }
+  
+button:hover {
+	background-color: #14141400;
+	color: white;
+}
+
+.autoclick2 {
+	display: none;
+}
+
+.ohraniceni {
+	height: 40px;
+	width: 100px;
+	background-color: white;
+	border-radius: 25px;
+	border: 2px solid white;
+	transition: all 0.7s linear;
+}
+
+.autoclick2:checked + * .ohraniceni {
+	border: 2px solid rgb(11, 255, 11);
+}
+
+#kulicka {
+	height: 40px;
+	width: 50px;
+	background-color: rgb(0, 0, 0);
+	position: relative;
+
+	border-radius: 25px;
+}
+
+.autoclick2:not(:checked) + * .kulicka:nth-child(1) {
+	animation-name: checkbox2;
+	animation-duration: 700ms;
+	animation-fill-mode: forwards;
+}
+
+@keyframes checkbox2 {
+	0% {background-color: rgb(11, 255, 11);
+		transform: translateX(40px);}
+
+	50% {	width: 100px;
+			transform: translateX(0px)}
+
+	100% {	background-color: rgb(0, 0, 0);
+			transform: translateX(0px);}
+}
+
+.autoclick2:checked + * .kulicka:nth-child(1) {
+	animation-name: checkbox;
+	animation-duration: 700ms;
+	animation-fill-mode: forwards;
+}
+
+@keyframes checkbox {
+	50% {	width: 100px;
+			transform: translateX(0px)}
+
+	100% {	background-color: rgb(11, 255, 11);
+			transform: translateX(50px);}
+}
+
+.autoclick2:checked + * .on:nth-child(2) {
+	color: rgb(0, 0, 0);
+	opacity: 100;
+}
+
+.autoclick2:checked + * .off:nth-child(3) {
+	opacity: 0;
+}
+
+.on {
+	position: relative;
+	left: 26px;
+	top: -30px;
+	opacity: 0;
+	text-shadow: none;
+	transition: all 0.7s linear;
+}
+
+.off {
+	position: relative;
+	right: 27px;
+	top: -47px;
+	color: rgb(255, 255, 255);
+	text-shadow: none;
+	transition: all 0.7s linear;
+}
+
+.autoroll {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 30px;
+}
+
+.autoroll .nadpis {
+	font-size: 30px;
+}
+
+/*---------------------------------------------*/
+
+.fastroll3 {
+	display: none;
+}
+
+.ohraniceni2 {
+	height: 40px;
+	width: 100px;
+	background-color: white;
+	border-radius: 25px;
+	border: 2px solid white;
+	transition: all 0.7s linear;
+}
+
+.fastroll3:checked + * .ohraniceni2 {
+	border: 2px solid rgb(11, 255, 11);
+}
+
+#kulicka2 {
+	height: 40px;
+	width: 50px;
+	background-color: rgb(0, 0, 0);
+	position: relative;
+	border-radius: 25px;
+}
+
+.fastroll3:not(:checked) + * .kulicka2:nth-child(1) {
+	animation-name: checkbox3;
+	animation-duration: 700ms;
+	animation-fill-mode: forwards
+}
+
+@keyframes checkbox3 {
+	0% {background-color: rgb(11, 255, 11);
+		transform: translateX(40px);}
+
+	50% {	width: 100px;
+			transform: translateX(0px)}
+
+	100% {	background-color: rgb(0, 0, 0);
+			transform: translateX(0px);}
+}
+
+.fastroll3:checked + * .kulicka2:nth-child(1) {
+	animation-name: checkbox4;
+	animation-duration: 700ms;
+	animation-fill-mode: forwards;
+}
+
+@keyframes checkbox4 {
+	50% {	width: 100px;
+			transform: translateX(0px)}
+
+	100% {	background-color: rgb(11, 255, 11);
+			transform: translateX(50px);}
+}
+
+.fastroll3:checked + * .on2:nth-child(2) {
+	color: rgb(0, 0, 0);
+	opacity: 100;
+}
+
+.fastroll3:checked + * .off2:nth-child(3) {
+	opacity: 0;
+}
+
+.on2 {
+	position: relative;
+	left: 26px;
+	top: -30px;
+	opacity: 0;
+	text-shadow: none;
+	transition: all 0.7s linear;
+}
+
+.off2 {
+	position: relative;
+	right: 27px;
+	top: -47px;
+	color: rgb(255, 255, 255);
+	text-shadow: none;
+	transition: all 0.7s linear;
+}
+
+.fastroll {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 30px;
+	padding-top: 15px;
+}
+
+.fastroll .nadpis {
+	font-size: 30px;
+}
+
+@media (max-width: 500px){
+	.okynko1 , .oknyko3 , .okynko2 {
+		width: 50px;
+		height: 50px;
+		padding: 5px;
+		margin: 5px;
+		font-size: 40px;
+	}
+
+	.paka {
+		height: 120px;
+	}
+
+	.okynka {
+		border-radius: 10px;
+	}
+
+	.vyhry {
+		font-size: 2vh;
+	}
+
+	.container {
+		width: 95%;
+	}
+
+	.panel {
+		flex-direction: column;
+	}
+}
